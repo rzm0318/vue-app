@@ -9,15 +9,15 @@
       </span>
         <span>外卖</span>
       </a>
-      <a href="javascript:" class="guide_item" :class="{on:'/order' === $route.path}"
-         @click="goto('./order')">
+      <a href="javascript:" class="guide_item" :class="{on:'/search' === $route.path}"
+         @click="goto('./search')">
       <span class="item_icon">
         <i class="iconfont icon-search"></i>
       </span>
         <span>搜索</span>
       </a>
-      <a href="javascript:" class="guide_item" :class="{on:'/search' === $route.path}"
-         @click="goto('./search')">
+      <a href="javascript:" class="guide_item" :class="{on:'/order' === $route.path}"
+         @click="goto('./order')">
       <span class="item_icon">
         <i class="iconfont icon-dingdan"></i>
       </span>
@@ -45,7 +45,7 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-  @import "../../common/stylus/mixins.styl"  //todo 用来编译
+  @import "../../common/stylus/mixins.styl"  //用来编译
   .footer_guide  //footer
     top-border-1px(#e4e4e4)
     position fixed
